@@ -1,0 +1,15 @@
+# This is your .travis.yml file
+
+# Specify any before_install, install, or script commands if necessary
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: ap-south-1
+  bucket: www.rahilresume.com
+  local_dir: build  # This points to your built project directory
+  skip_cleanup: true
+  on:
+    branch: main  # Replace with the branch you want to deploy from
+

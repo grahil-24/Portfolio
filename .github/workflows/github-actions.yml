@@ -3,7 +3,7 @@ name: Node.js CI
 on: [push]
 
 jobs:
-  setup-and-install:
+  setup-and-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -11,5 +11,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-      - name: Install dependencies
+      - name: Install dependencies and build app
         run: npm ci
+      - run: npm build
+    

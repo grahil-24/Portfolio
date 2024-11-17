@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ContactIcons from '../Contact/ContactIcons';
+import VisitorCounter from '../Stats/VisitorCount';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -48,6 +49,7 @@ const SideBar = () => (
       {/* <p className="copyright"> */}
       {/*   &copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>. */}
       {/* </p> */}
+      <VisitorCounter />
     </section>
   </section>
 );

@@ -4,7 +4,7 @@ This is a portfolio website that I customized for the [Cloud Resume Challenge](h
 
 ## Credits
 
-This portfolio is based on a design created by [Original Creator's Name](https://github.com/mldangelo). I cloned their repository and made modifications to suit the needs of this project. Big thanks to them for making their work available and inspiring my own site!
+This portfolio is based on a design created by Michael D'Angelo(https://github.com/mldangelo). I cloned their repository and made modifications to suit the needs of this project. Big thanks to them for making their work available and inspiring my own site!
 
 ## Project Overview
 
@@ -24,6 +24,9 @@ The portfolio website includes sections for:
 - **AWS CloudFront** for content delivery and caching
 - **AWS Route 53** for DNS management
 - **AWS Certificate Manager** for SSL/TLS certificates
+- **AWS Gateway** for 
+- **AWS DynamoDB** for storing visitor count
+- **AWS lambda** for updating the visitor count stored in dyanamoDB
 
 ## Customizations
 

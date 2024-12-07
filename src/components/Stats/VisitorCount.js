@@ -9,15 +9,15 @@ const VisitorCounter = () => {
         const response = await fetch('https://b32d290v34.execute-api.ap-south-1.amazonaws.com/prod/stats', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({}) // Empty body for the POST request
+            'Content-Type': 'application/json',
+          }, // Added trailing comma
+          body: JSON.stringify({}), // Empty body for the POST request, added trailing comma
         });
-        
+
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-  
+
         const data = await response.json();
         const count = JSON.parse(data.body); // Assuming `data.body` contains a stringified JSON
         setVisitorCount(count);
@@ -25,7 +25,7 @@ const VisitorCounter = () => {
         console.error('Error fetching visitor count:', err);
       }
     };
-  
+
     fetchVisitorCount();
   }, []);
 

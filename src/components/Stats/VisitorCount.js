@@ -6,7 +6,7 @@ const VisitorCounter = () => {
   useEffect(() => {
     const fetchVisitorCount = async () => {
       try {
-        const response = await fetch('https://b32d290v34.execute-api.ap-south-1.amazonaws.com/prod/stats', {
+        const response = await fetch('https://4qvgvnpyza.execute-api.ap-south-1.amazonaws.com/prod/stats', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

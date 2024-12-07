@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-This is a portfolio website that I customized for the [Cloud Resume Challenge](https://cloudresumechallenge.dev/). The website serves as a digital resume to showcase my skills and projects, with a particular focus on my cloud computing experience.
+This is a portfolio website that I customized for the [Cloud Resume Challenge](https://cloudresumechallenge.dev/). The website serves as a digital resume to showcase my skills and projects, with a particular focus on my cloud computing experience. The backend part is at https://github.com/grahil-24/backend-crc/
 
 ## Credits
 
@@ -17,23 +17,11 @@ The portfolio website includes sections for:
 
 ## Technologies Used
 
-- **HTML**
-- **CSS**
-- **JavaScript**
+- **github action**: for CD
 - **AWS S3** for hosting the static website
 - **AWS CloudFront** for content delivery and caching
 - **AWS Route 53** for DNS management
 - **AWS Certificate Manager** for SSL/TLS certificates
-- **AWS Gateway** for 
+- **AWS API Gateway** for exposing serverless backend function
 - **AWS DynamoDB** for storing visitor count
 - **AWS lambda** for updating the visitor count stored in dyanamoDB
-
-## Customizations
-
-The original design was customized to include additional sections specific to the Cloud Resume Challenge requirements, including:
-
-- A **visitor counter** that tracks visits to the website.
-- **CI/CD integration** to automatically deploy updates using GitHub Actions and AWS services.
-- Integration with **AWS Lambda** and **API Gateway** for backend services.
-
-
